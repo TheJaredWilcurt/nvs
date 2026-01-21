@@ -1,6 +1,8 @@
 # ADD Command - Node Version Switcher
 
-    nvs add <version>
+```
+nvs add <version>
+```
 
 Downloads and extracts a requested node version. An added node version is then ready to activate with a USE command.
 

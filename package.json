@@ -1,105 +1,45 @@
 {
-	"name": "nvs",
-	"version": "1.7.1",
-	"description": "Node Version Switcher",
-	"main": "lib/index.js",
-	"scripts": {
-		"test": "ava --verbose --serial test/modules/* test/cli/*",
-		"test-cli": "ava --verbose --serial test/cli/*",
-		"test-modules": "ava --verbose --serial test/modules/*",
-		"coverage": "nyc --all ava --serial test/modules/*",
-		"lint": "eslint lib test",
-		"ts-check": "tsc"
-	},
-	"author": "",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/jasongin/nvs"
-	},
-	"devDependencies": {
-		"@types/node": "^16.18.6",
-		"ava": "^5.1.0",
-		"eslint": "^8.29.0",
-		"eslint-config-standard": "^17.0.0",
-		"eslint-plugin-import": "^2.26.0",
-		"eslint-plugin-node": "^11.1.0",
-		"eslint-plugin-promise": "^6.1.1",
-		"nyc": "^15.1.0",
-		"rewire": "^2.5.2",
-		"typescript": "^4.9.3"
-	},
-	"ava": {
-		"files": [
-			"test/**/*Tests.js"
-		],
-		"timeout": "10m"
-	},
-	"nyc": {
-		"include": [
-			"lib/**"
-		],
-		"reporter": [
-			"text",
-			"html"
-		]
-	},
-	"eslintConfig": {
-		"env": {
-			"node": true,
-			"es6": true
-		},
-		"parserOptions": {
-			"ecmaVersion": 2017,
-			"sourceType": "script"
-		},
-		"extends": "standard",
-		"plugins": [
-			"promise"
-		],
-		"rules": {
-			"no-tabs": "off",
-			"no-multi-spaces": [
-				"error",
-				{
-					"ignoreEOLComments": true
-				}
-			],
-			"indent": [
-				"error",
-				"tab",
-				{
-					"SwitchCase": 1
-				}
-			],
-			"semi": [
-				"error",
-				"always"
-			],
-			"space-before-function-paren": [
-				"error",
-				{
-					"anonymous": "always",
-					"named": "never"
-				}
-			],
-			"comma-dangle": [
-				"error",
-				"always-multiline"
-			],
-			"strict": [
-				"error",
-				"global"
-			],
-			"no-var": "error",
-			"prefer-const": "off",
-			"quote-props": "off",
-			"array-bracket-spacing": "off",
-			"dot-notation": "off",
-			"no-case-declarations": "off",
-			"no-empty": "off",
-			"object-shorthand": "off",
-			"multiline-ternary": "off"
-		}
-	}
+  "name": "nvs",
+  "version": "1.7.1",
+  "description": "Node Version Switcher",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "ava --verbose --serial test/modules/* test/cli/*",
+    "test-cli": "ava --verbose --serial test/cli/*",
+    "test-modules": "ava --verbose --serial test/modules/*",
+    "coverage": "nyc --all ava --serial test/modules/*",
+    "ts-check": "tsc"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasongin/nvs"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "ava": "^6.4.1",
+    "nyc": "^17.1.0",
+    "rewire": "^9.0.1",
+    "typescript": "^5.9.3"
+  },
+  "ava": {
+    "files": [
+      "test/**/*Tests.js"
+    ],
+    "timeout": "10m"
+  },
+  "nyc": {
+    "include": [
+      "lib/**"
+    ],
+    "reporter": [
+      "text",
+      "html"
+    ]
+  },
+  "volta": {
+    "node": "25.4.0",
+    "npm": "11.7.0"
+  }
 }

@@ -1,11 +1,13 @@
 # RUN Command - Node Version Switcher
 
-    nvs <module.js> [args...]
-    nvs run <module.js> [args...]
-    nvs run auto <module.js> [args...]
+```
+nvs <module.js> [args...]
+nvs run <module.js> [args...]
+nvs run auto <module.js> [args...]
 
-    nvs <version> <module.js> [args...]
-    nvs run <version> <module.js> [args...]
+nvs <version> <module.js> [args...]
+nvs run <version> <module.js> [args...]
+```
 
 Runs a node module using a specified node version, without changing the caller's `PATH`.
 

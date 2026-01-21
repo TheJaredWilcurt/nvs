@@ -4,7 +4,8 @@ Visual Studio Code can use NVS to select a node version to use when launching or
 
 For multi-platform development, configuration can be customized for each platform. You may need to specify an absolute path such as `"${env:HOME}/.nvs/nvs"` if NVS is not in VS Code's PATH.
 
-Example: Configure `launch.json` so VS Code uses NVS to launch node version 18.17:
+**Example:** Configure `launch.json` so VS Code uses NVS to launch node version 18.17:
+
 ```json
   "configurations": [
     {

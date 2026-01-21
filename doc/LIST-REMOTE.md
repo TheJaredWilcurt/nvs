@@ -1,8 +1,10 @@
 # LIST-REMOTE Command - Node Version Switcher
 
-    nvs lsr [filter]
-    nvs ls-remote [filter]
-    nvs list-remote [filter]
+```
+nvs lsr [filter]
+nvs ls-remote [filter]
+nvs list-remote [filter]
+```
 
 Lists node versions available to download.
 

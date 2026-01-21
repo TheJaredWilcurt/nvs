@@ -1,12 +1,14 @@
 # USE Command - Node Version Switcher
 
-    nvs <version>
-    nvs use <version>
+```
+nvs <version>
+nvs use <version>
 
-    nvs use
-    nvs use auto
+nvs use
+nvs use auto
 
-    nvs use default
+nvs use default
+```
 
 Updates the `PATH` of the calling shell to include the specified node version (which must have been already added). If no version (or "auto") is specified, NVS searches for the nearest `.node-version` file in the current directory or parent directories. If found, the version specified in the file is then added (if necessary) and used. If no `.node-version` file is found, then the default (linked) version, if any, is used.
 

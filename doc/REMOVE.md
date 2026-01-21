@@ -1,7 +1,9 @@
 # REMOVE Command - Node Version Switcher
 
-    nvs rm <version>
-    nvs remove <version>
+```
+nvs rm <version>
+nvs remove <version>
+```
 
 Removes a node version that was previously added via an ADD command. Any symlinks or PATH entries (in the calling shell environment only) pointing to that version are also removed.
 
